@@ -1798,93 +1798,7 @@
 			margin-bottom: 6px;
 		}
 
-				/* ══════════════════════════════════════
-		   RESPONSIVE — Tablet ≤ 900px
-		══════════════════════════════════════ */
-		@media(max-width:900px) {
-			.w { padding: 0 28px; }
-			.sn { font-size: 80px; }
-			.sec { padding: 64px 0; }
-			.ic-grid { grid-template-columns: repeat(3, 1fr); }
-			.sc-grid3 { grid-template-columns: 1fr 1fr; }
-			.logo-grid { grid-template-columns: 1fr 1fr; }
-			.ty-grid { grid-template-columns: 1fr 1fr; }
-			.spirito-cards { grid-template-columns: 1fr 1fr; }
-			.tono-grid { grid-template-columns: 1fr 1fr; }
-			.zona-wrap { grid-template-columns: 1fr 1fr; }
-			.ft-grid { grid-template-columns: 1fr 1fr; }
-			.mc { margin-left: 0 !important; margin-right: 0 !important; max-width: 100% !important; }
-			.mh { padding: 20px 24px; gap: 16px; }
-			.mh svg:first-child { width: 36px; }
-			.mh-wm { display: none; }
-			.swatches { height: 160px; }
-			.cover-body { padding: 48px 32px 28px; }
-			.spirito-hero { padding: 48px 32px; }
-		}
-
-		/* ══════════════════════════════════════
-		   RESPONSIVE — Mobile ≤ 640px
-		══════════════════════════════════════ */
-		@media(max-width:640px) {
-			/* Layout base */
-			.w { padding: 0 16px; }
-			.sec { padding: 48px 0; }
-			.sn { font-size: 60px; letter-spacing: -1px; }
-			.st { font-size: clamp(18px, 5vw, 28px); }
-			.sh { margin-bottom: 32px; padding-bottom: 10px; }
-			.orn { margin: 20px 0; }
-			/* Cover */
-			.cover-band-l, .cover-band-r { display: none; }
-			.cover-top, .cover-foot { padding-left: 16px; padding-right: 16px; }
-			.cover-top-l, .cover-top-r { display: none; }
-			.cover-body { padding: 36px 16px 20px; }
-			.cover-scritta { width: min(300px, 86vw); }
-			/* Logo grids */
-			.logo-grid { grid-template-columns: 1fr; }
-			.sc-grid { grid-template-columns: 1fr; }
-			.sc-grid3 { grid-template-columns: 1fr 1fr; }
-			.ic-grid { grid-template-columns: repeat(2, 1fr); }
-			/* Palette */
-			.swatches { height: auto; flex-wrap: wrap; }
-			.sw { min-width: 50%; flex: 1 1 50%; min-height: 100px; }
-			.sw-nm { font-size: 16px; }
-			/* Tipografia */
-			.ty-grid { grid-template-columns: 1fr; }
-			/* Menu */
-			.mc { margin-left: 0 !important; margin-right: 0 !important; max-width: 100% !important; }
-			.mh { padding: 14px 16px; gap: 10px; flex-wrap: wrap; }
-			.mh svg:first-child { width: 28px; }
-			.mh-wm { display: none; }
-			.mb, .mcat, .mf { padding-left: 16px; padding-right: 16px; }
-			.m2 { grid-template-columns: 1fr; display: block !important; }
-			.mi { flex-wrap: nowrap; }
-			.mi-pr { white-space: nowrap; flex-shrink: 0; }
-			/* Do & Don't */
-			.dd { grid-template-columns: 1fr; }
-			/* Brand sections */
-			.spirito-hero { flex-direction: column; gap: 16px; padding: 28px 16px; }
-			.spirito-cards { grid-template-columns: 1fr; }
-			.tono-grid { grid-template-columns: 1fr 1fr; }
-			.zona-wrap { grid-template-columns: 1fr; }
-			/* Loyalty & bdc */
-			.bdc, .loyalty-card, .loyalty-card-back { width: 100% !important; max-width: 340px; }
-			/* Footer brand */
-			.ft-grid { grid-template-columns: 1fr; }
-			/* Sidenav */
-			.sidenav { display: none; }
-		}
-
-		/* ══════════════════════════════════════
-		   RESPONSIVE — Small phone ≤ 380px
-		══════════════════════════════════════ */
-		@media(max-width:380px) {
-			.sn { font-size: 44px; }
-			.cover-sub { font-size: 9px; letter-spacing: 4px; }
-			.tono-grid { grid-template-columns: 1fr; }
-			.ic-grid { grid-template-columns: repeat(2, 1fr); }
-			.sc-grid3 { grid-template-columns: 1fr; }
-			.sw { min-width: 100%; }
-		}
+				
 		/* ══════════════════════════════════════
 		   SIDENAV — Dots di navigazione laterale
 		══════════════════════════════════════ */
@@ -2292,20 +2206,91 @@
 		/* ── Overflow e scroll orizzontale ── */
 		html, body { overflow-x: hidden; }
 
-		/* ── Applicazioni inline-flex su mobile ── */
+		/* ══════════════════════════════════════
+		   RESPONSIVE — Tablet ≤ 900px
+		══════════════════════════════════════ */
+		@media(max-width:900px) {
+			.w { padding: 0 28px; }
+			.sn { font-size: 80px; }
+			.sec { padding: 64px 0; }
+			.ic-grid { grid-template-columns: repeat(3, 1fr); }
+			.sc-grid3 { grid-template-columns: 1fr 1fr; }
+			.logo-grid { grid-template-columns: 1fr 1fr; }
+			.ty-grid { grid-template-columns: 1fr 1fr; }
+			.spirito-cards { grid-template-columns: 1fr 1fr; }
+			.tono-grid { grid-template-columns: 1fr 1fr; }
+			.zona-wrap { grid-template-columns: 1fr 1fr; }
+			.zona-grid { grid-template-columns: 1fr 1fr; }
+			.ft-grid { grid-template-columns: 1fr 1fr; }
+			.mc { margin-left: 0 !important; margin-right: 0 !important; max-width: 100% !important; }
+			.mh { padding: 20px 24px; gap: 16px; }
+			.mh svg:first-child { width: 36px; }
+			.mh-wm { display: none; }
+			.swatches { height: 160px; }
+			.cover-body { padding: 48px 32px 28px; }
+			.spirito-hero { padding: 48px 32px; }
+		}
+
+		/* ══════════════════════════════════════
+		   RESPONSIVE — Mobile ≤ 640px
+		══════════════════════════════════════ */
 		@media(max-width:640px) {
-			/* Packaging, Social, Divise: wrap flex containers che usano gap grosso */
+			.w { padding: 0 16px; }
+			.sec { padding: 48px 0; }
+			.sn { font-size: 60px; letter-spacing: -1px; }
+			.st { font-size: clamp(18px, 5vw, 28px); }
+			.sh { margin-bottom: 32px; padding-bottom: 10px; gap: 0; }
+			.orn { margin: 20px 0; }
+			.cover-band-l, .cover-band-r { display: none; }
+			.cover-top { justify-content: center; padding-left: 16px; padding-right: 16px; }
+			.cover-foot { padding-left: 16px; padding-right: 16px; }
+			.cover-top-l, .cover-top-r { display: none; }
+			.cover-body { padding: 36px 16px 20px; }
+			.cover-scritta { width: min(300px, 86vw); }
+			.header-right { display: none !important; }
+			.logo-grid { grid-template-columns: 1fr; }
+			.sc-grid { grid-template-columns: 1fr; }
+			.sc-grid3 { grid-template-columns: 1fr; }
+			.ic-grid { grid-template-columns: repeat(2, 1fr); }
+			.swatches { height: auto; flex-wrap: wrap; }
+			.sw { min-width: 50%; flex: 1 1 50%; min-height: 100px; }
+			.sw-nm { font-size: 16px; }
+			.ty-grid { grid-template-columns: 1fr; }
+			.mc { margin-left: 0 !important; margin-right: 0 !important; max-width: 100% !important; }
+			.mh { padding: 14px 16px; gap: 10px; flex-wrap: wrap; }
+			.mh svg:first-child { width: 28px; }
+			.mh-wm { display: none; }
+			.mb, .mcat, .mf { padding-left: 16px; padding-right: 16px; }
+			.m2 { grid-template-columns: 1fr; display: block !important; }
+			.mi { flex-wrap: nowrap; }
+			.mi-pr { white-space: nowrap; flex-shrink: 0; }
+			.dd { grid-template-columns: 1fr; }
+			.spirito-hero { flex-direction: column; gap: 16px; padding: 28px 16px; }
+			.spirito-cards { grid-template-columns: 1fr; }
+			.tono-grid { grid-template-columns: 1fr; }
+			.zona-wrap { grid-template-columns: 1fr; }
+			.zona-grid { grid-template-columns: 1fr; }
+			.bdc, .loyalty-card, .loyalty-card-back { width: 100% !important; max-width: 340px; }
+			.ft-grid { grid-template-columns: 1fr; }
+			.sidenav { display: none; }
 			.sec .w > div[style*="display:flex"],
-			.sec .w > div > div[style*="display:flex"] {
-				gap: 24px !important;
-			}
-			/* Evita overflow da elementi a larghezza fissa */
+			.sec .w > div > div[style*="display:flex"] { gap: 24px !important; }
 			.sec svg, .sec img { max-width: 100%; height: auto; }
-			/* Section header: numero grande non stravolge layout */
-			.sh { gap: 0; }
-			/* Reduce packaging perspective containers */
 			[style*="perspective"] { perspective: 600px !important; }
 		}
+
+		/* ══════════════════════════════════════
+		   RESPONSIVE — Small phone ≤ 380px
+		══════════════════════════════════════ */
+		@media(max-width:380px) {
+			.sn { font-size: 44px; }
+			.cover-sub { font-size: 9px; letter-spacing: 4px; }
+			.tono-grid { grid-template-columns: 1fr; }
+			.ic-grid { grid-template-columns: repeat(2, 1fr); }
+			.sc-grid3 { grid-template-columns: 1fr; }
+			.sw { min-width: 100%; }
+		}
+
 	</style>
 </head>
 
@@ -2360,7 +2345,7 @@
 				<img src="scritta (1).svg"
 					style="height:22px; filter:brightness(0) invert(1); opacity:0.88; max-width:140px; object-fit:contain;">
 			</div>
-			<div style="display:flex; align-items:center; gap:20px;">
+			<div class="header-right" style="display:flex; align-items:center; gap:20px;">
 				<div
 					style="font-family:'Oswald',sans-serif; font-size:10px; letter-spacing:4px; text-transform:uppercase; color:rgba(255,255,255,0.4);">
 					Brand Identity · Edizione Premium</div>
