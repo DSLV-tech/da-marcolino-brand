@@ -1540,7 +1540,7 @@
 		}
 
 		.mi-nm.sp {
-			color: var(--r2)
+			color: var(--n)
 		}
 
 		.mi-ds {
@@ -2215,6 +2215,11 @@
 			max-width: 100%;
 			height: auto;
 		}
+		.uniforms-spec {
+			display: grid;
+			grid-template-columns: repeat(4, 1fr);
+			gap: 20px;
+		}
 
 				html, body { overflow-x: hidden; }
 
@@ -2242,6 +2247,7 @@
 			.cover-body { padding: 48px 32px 28px; }
 			.spirito-hero { padding: 48px 32px; }
 			.uniforms-grid { grid-template-columns: 1fr 1fr; gap: 24px; }
+			.uniforms-spec { grid-template-columns: 1fr 1fr; gap: 16px; }
 		}
 
 		/* ══════════════════════════════════════
@@ -2291,6 +2297,7 @@
 			.sec svg, .sec img { max-width: 100%; height: auto; }
 			[style*="perspective"] { perspective: 600px !important; }
 			.uniforms-grid { grid-template-columns: 1fr 1fr; gap: 20px; }
+			.uniforms-spec { grid-template-columns: 1fr 1fr; gap: 12px; }
 		}
 
 		/* ══════════════════════════════════════
@@ -2304,6 +2311,7 @@
 			.sc-grid3 { grid-template-columns: 1fr; }
 			.sw { min-width: 100%; }
 			.uniforms-grid { grid-template-columns: 1fr; }
+			.uniforms-spec { grid-template-columns: 1fr 1fr; gap: 10px; }
 		}
 
 	</style>
@@ -8257,10 +8265,14 @@ Titoli sezione: <em>Oswald Bold</em> &mdash; Nomi piatti: <em>Oswald SemiBold</e
 								<!-- Tasca centrale -->
 								<rect x="42" y="112" width="76" height="50" rx="3" fill="rgba(13,13,13,0.07)" stroke="rgba(13,13,13,0.12)" stroke-width="1"/>
 								<rect x="42" y="112" width="76" height="3" rx="1" fill="#D81B1B" opacity="0.5"/>
-								<!-- Logo centrato -->
-								<text x="80" y="72" text-anchor="middle" font-family="'Oswald',sans-serif" font-size="6.5" fill="rgba(13,13,13,0.4)" letter-spacing="3">DA MARCOLINO</text>
-								<line x1="52" y1="76" x2="108" y2="76" stroke="rgba(13,13,13,0.12)" stroke-width="0.5"/>
-								<text x="80" y="86" text-anchor="middle" font-family="'Oswald',sans-serif" font-size="5" fill="rgba(13,13,13,0.2)" letter-spacing="2">STROPPIANA · VC</text>
+								<!-- Quadrifoglio centrato -->
+								<g transform="translate(69.4,58.1) scale(0.85)" fill="rgba(13,13,13,0.38)">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M12.615,11.362c0.978-2.111,1.767-3.923,2.648-5.686c0.988-1.972,2.342-2.679,4.047-2.243c1.695,0.43,2.434,1.623,2.416,3.902c0,0.275,0,0.553,0,0.688c0.793,1.723,3.922,1.511,3.062,4.459c-0.146,0.096-0.479,0.242-0.73,0.479c-2.852,2.648-5.65,1.482-8.463-0.074C14.703,12.39,13.777,11.954,12.615,11.362z"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M0,12.33c0.516-0.822,0.908-1.571,1.411-2.232C2.535,8.62,3.66,8.185,5.349,8.837c2.171,0.842,4.266,1.876,6.624,2.928c-1.076,2.317-1.996,4.456-3.059,6.522c-0.671,1.305-1.9,1.795-3.344,1.564c-1.428-0.227-2.724-1.041-2.658-2.477C3.018,14.988,1.63,13.66,0,12.33z"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M12.605,12.416c2.316,1.094,4.458,2.006,6.503,3.106c1.4,0.754,1.877,2.201,1.49,3.605c-0.406,1.467-1.422,2.365-3.086,2.352c-1.09-0.004-1.891,0.182-2.756,0.951c-1.253,1.115-2.959,1.018-4.145,0.096c-1.087-0.846-1.556-2.332-0.94-3.822C10.523,16.639,11.553,14.645,12.605,12.416z"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M11.945,10.785C9.682,9.798,7.693,9.004,5.77,8.069C4.088,7.25,3.424,5.967,3.691,4.487c0.293-1.616,1.486-2.657,3.455-2.6c0.971,0.027,1.504-0.274,2.17-0.876c1.367-1.228,2.775-1.295,4.092-0.433c1.384,0.907,1.835,2.356,1.121,4.222C13.797,6.717,12.908,8.574,11.945,10.785z"/>
+</g>
+								<text x="80" y="93" text-anchor="middle" font-family="'Oswald',sans-serif" font-size="5" fill="rgba(13,13,13,0.2)" letter-spacing="2">STROPPIANA · VC</text>
 								<!-- Ombra inferiore -->
 								<path d="M12,200 L148,200" stroke="rgba(0,0,0,0.08)" stroke-width="2"/>
 							</svg>
@@ -8300,10 +8312,14 @@ Titoli sezione: <em>Oswald Bold</em> &mdash; Nomi piatti: <em>Oswald SemiBold</e
 								<rect x="88" y="152" width="46" height="52" rx="3" fill="rgba(13,13,13,0.06)" stroke="rgba(13,13,13,0.1)" stroke-width="1"/>
 								<rect x="26" y="152" width="46" height="3" rx="1" fill="#D81B1B" opacity="0.4"/>
 								<rect x="88" y="152" width="46" height="3" rx="1" fill="#D81B1B" opacity="0.4"/>
-								<!-- Logo centrale -->
-								<text x="80" y="128" text-anchor="middle" font-family="'Oswald',sans-serif" font-size="6.5" fill="rgba(13,13,13,0.35)" letter-spacing="3">DA MARCOLINO</text>
-								<line x1="50" y1="132" x2="110" y2="132" stroke="rgba(13,13,13,0.1)" stroke-width="0.5"/>
-								<text x="80" y="141" text-anchor="middle" font-family="'Oswald',sans-serif" font-size="5" fill="rgba(13,13,13,0.18)" letter-spacing="2">PIZZERIA · TRATTORIA</text>
+								<!-- Quadrifoglio centrale -->
+								<g transform="translate(69.4,112.1) scale(0.85)" fill="rgba(13,13,13,0.33)">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M12.615,11.362c0.978-2.111,1.767-3.923,2.648-5.686c0.988-1.972,2.342-2.679,4.047-2.243c1.695,0.43,2.434,1.623,2.416,3.902c0,0.275,0,0.553,0,0.688c0.793,1.723,3.922,1.511,3.062,4.459c-0.146,0.096-0.479,0.242-0.73,0.479c-2.852,2.648-5.65,1.482-8.463-0.074C14.703,12.39,13.777,11.954,12.615,11.362z"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M0,12.33c0.516-0.822,0.908-1.571,1.411-2.232C2.535,8.62,3.66,8.185,5.349,8.837c2.171,0.842,4.266,1.876,6.624,2.928c-1.076,2.317-1.996,4.456-3.059,6.522c-0.671,1.305-1.9,1.795-3.344,1.564c-1.428-0.227-2.724-1.041-2.658-2.477C3.018,14.988,1.63,13.66,0,12.33z"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M12.605,12.416c2.316,1.094,4.458,2.006,6.503,3.106c1.4,0.754,1.877,2.201,1.49,3.605c-0.406,1.467-1.422,2.365-3.086,2.352c-1.09-0.004-1.891,0.182-2.756,0.951c-1.253,1.115-2.959,1.018-4.145,0.096c-1.087-0.846-1.556-2.332-0.94-3.822C10.523,16.639,11.553,14.645,12.605,12.416z"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M11.945,10.785C9.682,9.798,7.693,9.004,5.77,8.069C4.088,7.25,3.424,5.967,3.691,4.487c0.293-1.616,1.486-2.657,3.455-2.6c0.971,0.027,1.504-0.274,2.17-0.876c1.367-1.228,2.775-1.295,4.092-0.433c1.384,0.907,1.835,2.356,1.121,4.222C13.797,6.717,12.908,8.574,11.945,10.785z"/>
+</g>
+								<text x="80" y="148" text-anchor="middle" font-family="'Oswald',sans-serif" font-size="5" fill="rgba(13,13,13,0.18)" letter-spacing="2">PIZZERIA · TRATTORIA</text>
 							</svg>
 						</div>
 						<div style="text-align:center;">
@@ -8336,10 +8352,13 @@ Titoli sezione: <em>Oswald Bold</em> &mdash; Nomi piatti: <em>Oswald SemiBold</e
 								<!-- Banda rossa bassa -->
 								<rect x="48" y="166" width="84" height="22" rx="0" fill="#D81B1B"/>
 								<text x="90" y="181" text-anchor="middle" font-family="'Oswald',sans-serif" font-size="5.5" fill="rgba(255,253,245,0.7)" letter-spacing="3">STROPPIANA · VC</text>
-								<!-- Logo petto sx -->
-								<text x="80" y="92" text-anchor="middle" font-family="'Oswald',sans-serif" font-size="6.5" fill="rgba(13,13,13,0.35)" letter-spacing="2">DA MARCOLINO</text>
-								<line x1="56" y1="95" x2="104" y2="95" stroke="rgba(13,13,13,0.12)" stroke-width="0.5"/>
-								<text x="80" y="104" text-anchor="middle" font-family="'Alfa Slab One',serif" font-size="7" fill="rgba(13,13,13,0.25)">Marcolino</text>
+								<!-- Quadrifoglio petto -->
+								<g transform="translate(69.4,78.1) scale(0.85)" fill="rgba(13,13,13,0.33)">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M12.615,11.362c0.978-2.111,1.767-3.923,2.648-5.686c0.988-1.972,2.342-2.679,4.047-2.243c1.695,0.43,2.434,1.623,2.416,3.902c0,0.275,0,0.553,0,0.688c0.793,1.723,3.922,1.511,3.062,4.459c-0.146,0.096-0.479,0.242-0.73,0.479c-2.852,2.648-5.65,1.482-8.463-0.074C14.703,12.39,13.777,11.954,12.615,11.362z"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M0,12.33c0.516-0.822,0.908-1.571,1.411-2.232C2.535,8.62,3.66,8.185,5.349,8.837c2.171,0.842,4.266,1.876,6.624,2.928c-1.076,2.317-1.996,4.456-3.059,6.522c-0.671,1.305-1.9,1.795-3.344,1.564c-1.428-0.227-2.724-1.041-2.658-2.477C3.018,14.988,1.63,13.66,0,12.33z"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M12.605,12.416c2.316,1.094,4.458,2.006,6.503,3.106c1.4,0.754,1.877,2.201,1.49,3.605c-0.406,1.467-1.422,2.365-3.086,2.352c-1.09-0.004-1.891,0.182-2.756,0.951c-1.253,1.115-2.959,1.018-4.145,0.096c-1.087-0.846-1.556-2.332-0.94-3.822C10.523,16.639,11.553,14.645,12.605,12.416z"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M11.945,10.785C9.682,9.798,7.693,9.004,5.77,8.069C4.088,7.25,3.424,5.967,3.691,4.487c0.293-1.616,1.486-2.657,3.455-2.6c0.971,0.027,1.504-0.274,2.17-0.876c1.367-1.228,2.775-1.295,4.092-0.433c1.384,0.907,1.835,2.356,1.121,4.222C13.797,6.717,12.908,8.574,11.945,10.785z"/>
+</g>
 							</svg>
 						</div>
 						<div style="text-align:center;">
@@ -8367,10 +8386,13 @@ Titoli sezione: <em>Oswald Bold</em> &mdash; Nomi piatti: <em>Oswald SemiBold</e
 								<!-- Passante sommità nero -->
 								<circle cx="90" cy="22" r="5" fill="#D81B1B"/>
 								<circle cx="90" cy="22" r="3" fill="#F0EBD8"/>
-								<!-- Logo pannello frontale -->
-								<text x="90" y="62" text-anchor="middle" font-family="'Oswald',sans-serif" font-size="6.5" fill="rgba(13,13,13,0.35)" letter-spacing="2.5">DA MARCOLINO</text>
-								<line x1="64" y1="65" x2="116" y2="65" stroke="rgba(13,13,13,0.1)" stroke-width="0.5"/>
-								<text x="90" y="77" text-anchor="middle" font-family="'Alfa Slab One',serif" font-size="10" fill="rgba(13,13,13,0.25)">Marcolino</text>
+								<!-- Quadrifoglio pannello frontale -->
+								<g transform="translate(79.4,50.1) scale(0.85)" fill="rgba(13,13,13,0.33)">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M12.615,11.362c0.978-2.111,1.767-3.923,2.648-5.686c0.988-1.972,2.342-2.679,4.047-2.243c1.695,0.43,2.434,1.623,2.416,3.902c0,0.275,0,0.553,0,0.688c0.793,1.723,3.922,1.511,3.062,4.459c-0.146,0.096-0.479,0.242-0.73,0.479c-2.852,2.648-5.65,1.482-8.463-0.074C14.703,12.39,13.777,11.954,12.615,11.362z"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M0,12.33c0.516-0.822,0.908-1.571,1.411-2.232C2.535,8.62,3.66,8.185,5.349,8.837c2.171,0.842,4.266,1.876,6.624,2.928c-1.076,2.317-1.996,4.456-3.059,6.522c-0.671,1.305-1.9,1.795-3.344,1.564c-1.428-0.227-2.724-1.041-2.658-2.477C3.018,14.988,1.63,13.66,0,12.33z"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M12.605,12.416c2.316,1.094,4.458,2.006,6.503,3.106c1.4,0.754,1.877,2.201,1.49,3.605c-0.406,1.467-1.422,2.365-3.086,2.352c-1.09-0.004-1.891,0.182-2.756,0.951c-1.253,1.115-2.959,1.018-4.145,0.096c-1.087-0.846-1.556-2.332-0.94-3.822C10.523,16.639,11.553,14.645,12.605,12.416z"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M11.945,10.785C9.682,9.798,7.693,9.004,5.77,8.069C4.088,7.25,3.424,5.967,3.691,4.487c0.293-1.616,1.486-2.657,3.455-2.6c0.971,0.027,1.504-0.274,2.17-0.876c1.367-1.228,2.775-1.295,4.092-0.433c1.384,0.907,1.835,2.356,1.121,4.222C13.797,6.717,12.908,8.574,11.945,10.785z"/>
+</g>
 								<text x="90" y="88" text-anchor="middle" font-family="'Oswald',sans-serif" font-size="5" fill="rgba(13,13,13,0.18)" letter-spacing="2">STROPPIANA</text>
 								<!-- Bordo visiera -->
 								<ellipse cx="90" cy="122" rx="84" ry="14" fill="none" stroke="rgba(13,13,13,0.1)" stroke-width="0.8"/>
@@ -8386,7 +8408,7 @@ Titoli sezione: <em>Oswald Bold</em> &mdash; Nomi piatti: <em>Oswald SemiBold</e
 
 				<!-- Specifiche tecniche -->
 				<div style="margin-top:56px; max-width:800px; margin-left:auto; margin-right:auto;">
-					<div style="display:grid; grid-template-columns:repeat(4,1fr); gap:20px;">
+					<div class="uniforms-spec">
 						<div style="border:2px solid var(--n); padding:18px 16px; background:var(--w); box-shadow:4px 4px 0 var(--r2);">
 							<div style="font-family:'Oswald',sans-serif; font-size:8px; letter-spacing:4px; text-transform:uppercase; color:var(--r); margin-bottom:8px;">Colori</div>
 							<div style="font-family:'Source Serif 4',serif; font-size:11px; line-height:1.7; color:var(--grigio);">
