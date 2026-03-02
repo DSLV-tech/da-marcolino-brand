@@ -2204,7 +2204,19 @@
 		}
 	
 		/* ── Overflow e scroll orizzontale ── */
-		html, body { overflow-x: hidden; }
+		/* Griglia divise da lavoro */
+		.uniforms-grid {
+			display: grid;
+			grid-template-columns: repeat(4, 1fr);
+			gap: 32px;
+			align-items: start;
+		}
+		.uniforms-grid > div svg {
+			max-width: 100%;
+			height: auto;
+		}
+
+				html, body { overflow-x: hidden; }
 
 		/* ══════════════════════════════════════
 		   RESPONSIVE — Tablet ≤ 900px
@@ -2229,6 +2241,7 @@
 			.swatches { height: 160px; }
 			.cover-body { padding: 48px 32px 28px; }
 			.spirito-hero { padding: 48px 32px; }
+			.uniforms-grid { grid-template-columns: 1fr 1fr; gap: 24px; }
 		}
 
 		/* ══════════════════════════════════════
@@ -2277,6 +2290,7 @@
 			.sec .w > div > div[style*="display:flex"] { gap: 24px !important; }
 			.sec svg, .sec img { max-width: 100%; height: auto; }
 			[style*="perspective"] { perspective: 600px !important; }
+			.uniforms-grid { grid-template-columns: 1fr 1fr; gap: 20px; }
 		}
 
 		/* ══════════════════════════════════════
@@ -2289,6 +2303,7 @@
 			.ic-grid { grid-template-columns: repeat(2, 1fr); }
 			.sc-grid3 { grid-template-columns: 1fr; }
 			.sw { min-width: 100%; }
+			.uniforms-grid { grid-template-columns: 1fr; }
 		}
 
 	</style>
@@ -8218,7 +8233,7 @@ Titoli sezione: <em>Oswald Bold</em> &mdash; Nomi piatti: <em>Oswald SemiBold</e
 				</p>
 
 				<!-- GRIGLIA UNIFORMI 4 colonne -->
-				<div style="display:grid; grid-template-columns:repeat(4,1fr); gap:32px; align-items:start;">
+				<div class="uniforms-grid">
 
 					<!-- ── GREMBIULE DA SALA ── -->
 					<div style="display:flex; flex-direction:column; align-items:center; gap:16px;">
